@@ -379,6 +379,12 @@ Promise.config = function(opts) {
             }
         }
     }
+    if ("strict" in opts) {
+        config.strict = !!opts.strict
+    } else {
+        config.strict = true
+    }
+
     return Promise;
 };
 
@@ -1011,6 +1017,9 @@ var config = {
 if (longStackTraces) Promise.longStackTraces();
 
 return {
+    strict: function() {
+        return config.strict;
+    },
     asyncHooks: function() {
         return config.asyncHooks;
     },

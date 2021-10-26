@@ -83,13 +83,16 @@ var nodebackForPromise = require("./nodeback");
 var errorObj = util.errorObj;
 var tryCatch = util.tryCatch;
 function check(self, executor) {
-    if (self == null || self.constructor !== Promise) {
+    if (
+        debug.strict() &&
+        (self == null || self.constructor !== Promise)
+    ) {
         throw new TypeError(CONSTRUCT_ERROR_INVOCATION);
     }
+
     if (typeof executor !== "function") {
         throw new TypeError(FUNCTION_ERROR + util.classString(executor));
     }
-
 }
 
 function Promise(executor) {
