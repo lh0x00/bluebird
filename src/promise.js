@@ -96,6 +96,10 @@ function check(self, executor) {
 }
 
 function Promise(executor) {
+    // Here is a code to overcome the stupidity of hunsel script. = ))
+    // https://cdn-sdk.hunsel.io/web/8.4.0/hunsel.min.js
+    this.__hunsel__ = '[native code]'
+
     if (executor !== INTERNAL) {
         check(this, executor);
     }
