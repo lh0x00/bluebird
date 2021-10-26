@@ -1,5 +1,5 @@
 {
-  "name": "bluebird",
+  "name": "bluebird-plus",
   "description": "Full featured Promises/A+ implementation with exceptionally good performance",
   "version": "3.7.2",
   "keywords": [
@@ -25,13 +25,13 @@
     "generate-browser-full": "node tools/build.js --no-clean --no-debug --release --browser --minify",
     "generate-browser-core": "node tools/build.js --features=core --no-debug --release --zalgo --browser --minify && mv js/browser/bluebird.js js/browser/bluebird.core.js && mv js/browser/bluebird.min.js js/browser/bluebird.core.min.js"
   },
-  "homepage": "https://github.com/petkaantonov/bluebird",
+  "homepage": "https://github.com/lamhieu-vk/bluebird",
   "repository": {
     "type": "git",
-    "url": "git://github.com/petkaantonov/bluebird.git"
+    "url": "git://github.com/lamhieu-vk/bluebird.git"
   },
   "bugs": {
-    "url": "http://github.com/petkaantonov/bluebird/issues"
+    "url": "http://github.com/lamhieu-vk/bluebird/issues"
   },
   "license": "MIT",
   "author": {
@@ -40,31 +40,31 @@
     "url": "http://github.com/petkaantonov/"
   },
   "devDependencies": {
-    "acorn": "^6.0.2",
-    "acorn-walk": "^6.1.0",
-    "baconjs": "^0.7.43",
-    "bluebird": "^2.9.2",
-    "body-parser": "^1.10.2",
-    "browserify": "^8.1.1",
-    "cli-table": "~0.3.1",
-    "co": "^4.2.0",
-    "cross-spawn": "^0.2.3",
-    "glob": "^4.3.2",
-    "grunt-saucelabs": "~8.4.1",
-    "highland": "^2.3.0",
+    "acorn": "^6.4.2",
+    "acorn-walk": "^6.2.0",
+    "baconjs": "^0.7.95",
+    "bluebird": "^2.11.0",
+    "body-parser": "^1.19.0",
+    "browserify": "^8.1.3",
+    "cli-table": "~0.3.6",
+    "co": "^4.6.0",
+    "cross-spawn": "^0.4.1",
+    "glob": "^4.5.3",
+    "grunt-saucelabs": "~8.6.3",
+    "highland": "^2.13.5",
     "istanbul": "^0.3.5",
-    "jshint": "^2.6.0",
-    "jshint-stylish": "~0.2.0",
-    "kefir": "^2.4.1",
-    "mkdirp": "~0.5.0",
-    "mocha": "~2.1",
+    "jshint": "^2.13.1",
+    "jshint-stylish": "~0.4.0",
+    "kefir": "^2.8.2",
+    "mkdirp": "~0.5.5",
+    "mocha": "~2.5",
     "open": "~0.0.5",
     "optimist": "~0.6.1",
-    "rimraf": "~2.2.6",
-    "rx": "^2.3.25",
-    "serve-static": "^1.7.1",
-    "sinon": "~1.7.3",
-    "uglify-js": "~2.4.16"
+    "rimraf": "~2.7.1",
+    "rx": "^2.5.3",
+    "serve-static": "^1.14.1",
+    "sinon": "~1.17.7",
+    "uglify-js": "~2.8.29"
   },
   "readmeFilename": "README.md",
   "main": "./js/release/bluebird.js",
